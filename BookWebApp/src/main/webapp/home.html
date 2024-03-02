@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Book App</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+	tr:hover{
+		background-color: lightgray;
+	}
+	.box{
+		margin-left:120px;
+		margin-right:120px;	
+	}
+	form{
+		border-style: groove;
+	}
+	h2{
+		background-color: red;
+		color: white;
+		text-align: center;
+	}
+</style>
+</head>
+<body class="container-fluid">
+<div class="box">
+<h2>Book Registration</h2>
+<form action="register" method="post">
+	<table class="table ">
+		<tr>
+			<td>Book Name</td>
+			<td><input type="text" name="bookname"></td>
+		</tr>
+		<tr>
+			<td>Book Edition</td>
+			<td><input type="text" name="bookEdition"></td>
+		</tr>
+		<tr>
+			<td>Book Price</td>
+			<td><input type="text" name="bookPrice"></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="register"></td>
+			<td><input type="reset" value="cancel"></td>
+		</tr>
+	</table>
+	<a href='booklist'>Book list</a>
+</form>
+</div>
+</body>
+</html>
